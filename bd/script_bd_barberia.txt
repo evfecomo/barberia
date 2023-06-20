@@ -1,0 +1,14 @@
+CREATE DATABASE contactenos;
+
+USE contactenos;
+
+CREATE TABLE solicitudes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_completo VARCHAR(90),
+    email VARCHAR(70),
+    telefono VARCHAR(15),
+    mensaje TEXT,
+    tipo_contacto VARCHAR(10),
+    horario VARCHAR(8),
+    notificaciones BOOLEAN
+);

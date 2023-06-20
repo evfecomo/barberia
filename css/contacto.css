@@ -1,0 +1,55 @@
+.formulario .formulario__contacto {
+    margin: 40px 40px;
+}
+
+.formulario__contacto .formulario,
+.formulario__contacto .pregunta__contacto {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input__padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0;
+    transition: 1s all;
+    width: 40%;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+.tabla__dias__horario {
+    margin: 40px 40px;
+}
+
+.dias__atencion {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+.dia__hora,
+.dias__horarios {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Barbershop America</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="css/contacto.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="encabezado container">
+        <div class="caja">
+            <h1><img class="logo__barberia" src="imagen_pagina/imagen_logo.png" alt="Logo de la barberia"></h1>
+            <nav class="menu">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a class="menu__link activo" href="index.html">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="productos.html">Productos</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="formulario">
+            <form action="contactenos.php" method="POST" class="formulario__contacto">
+                <fieldset>
+                    <div class="input__container">
+                        <label class="input__label" for="nombreapellido">Nombre y Apellido</label>
+                        <input name="name" id="nombreapellido" class="input__padron" type="text"
+                            placeholder="Nombre y Apellido" required data-tipo="nombre">
+                        <span class="input__message__error"></span>
+                    </div>
+                    <div class="input__container"></div>
+                    <label class="input__label" for="correoelectronico">Correo Electronico</label>
+                    <input name="email" id="email" class="input__padron" type="email" placeholder="email@dominio.com"
+                        required data-tipo="email">
+                    <span class="input__message__error"></span>
+                    </div>
+                    <div class="input__container">
+                        <label class="input__label" for="telefono">Teléfono</label>
+                        <input name="phoneNumber" id="telefono" class="input__padron" type="text"
+                            placeholder="xx xxx xxx xx xx" pattern="\d{12}" required minlength="12" maxlength="12"
+                            data-tipo="numero">
+                        <span class="input__message__erro"></span>
+                    </div>
+                    <div class="input__container">
+                        <textarea cols="70" rows="10" name="mensaje" id="mensaje" class="input__padron" required></textarea>
+                        <label class="input__label" for="mensaje">Mensaje</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="pregunta__contacto">¿Cómo le gustaria que lo contactemos?</legend>
+                    <label for="radio-email"><input type="radio" name="contacto" value="email"
+                            id="radio-email">Email</label>
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                            id="radio-telefono">Teléfono</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"
+                            checked>Whatsapp</label>
+                </fieldset>
+                <fieldset>
+                    <legend class="pregunta__contacto">¿En cual horario prefiere ser atendido?</legend>
+                    <select name="horario">
+                        <option value="mañana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noche">Noche</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label class="checkbox"><input type="checkbox" name="recibir_novedades" checked>¿Le gustaria recibir novedades de la
+                        Barbershop America?</label>
+                    <input type="submit" value="Enviar Formulario" class="enviar">
+                </fieldset>
+            </form>
+            <table class="tabla__dias__horario">
+                <thead class="dias__atencion">
+                    <tr>
+                        <th class="dias__horarios">Dia</th>
+                        <th class="dias__horarios">Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="dia__hora">Lunes</td>
+                        <td class="dia__hora">08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td class="dia__hora">Miercoles</td>
+                        <td class="dia__hora">08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td class="dia__hora">Viernes</td>
+                        <td class="dia__hora">08h - 20h </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer class="footer container">
+            <img src="imagen_pagina/imagen_footer.png" alt="" class="footer__logo">
+            <ul class="footer__social">
+                <li><a href="#" class="footer__midia"><img src="imagen_redes/facebook.png" alt="Icono de Facebook"></a>
+                </li>
+                <li><a href="#" class="footer__midia"><img src="imagen_redes/instagram.png"
+                            alt="Icono de Instagram"></a></li>
+                <li><a href="#" class="footer__midia"><img src="imagen_redes/twitter.png" alt="Icono de Twitter"></a>
+                </li>
+            </ul>
+            <nav>
+                <ul class="footer__navegacion">
+                    <li class="menu__item"><a class="menu__link activo" href="index.html">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="productos.html">Productos</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">&copy Copyright Barbershop America - 2023</p>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.footer {
+    align-items: center;
+    background-image: url("imagen_pagina/bg.jpg");
+    background-position: 25% 20vh;
+    background-size: 20% auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    padding: 20px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.container .footer__social {
+    float: left;
+    margin: 10px;
+    width: 30%;
+}
+
+.footer__navegacion .menu__link {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.footer__navegacion .menu__link {
+    width: 65%;
+    float: left;
+    margin: 10px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 15PX;
+    margin: 20px;
+}

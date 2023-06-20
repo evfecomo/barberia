@@ -1,0 +1,44 @@
+.productos__barberia .productos {
+    margin: 0 auto;
+    padding: 50px;
+    width: 940px;
+}
+
+.productos__barberia .item__productos {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 1.5%;
+    padding: 30PX 20PX;
+    text-align: center;
+    vertical-align: top;
+    width: 30%;
+}
+
+.productos__barberia .item__productos:hover {
+    border-color: #c78c19;
+}
+
+.productos__barberia .item__productos:active {
+    border-color: #088c19;
+}
+
+.productos__barberia .titulo__productos {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.productos__barberia .item__productos:hover .titulo__productos {
+    font-size: 33px;
+}
+
+.producto__descripcion {
+    font-size: 18px;
+}
+
+.producto__precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
